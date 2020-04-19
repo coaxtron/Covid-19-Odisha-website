@@ -1,0 +1,53 @@
+.background {
+    padding-top: 3.375rem;
+    padding-bottom: 6.875rem;
+    /* background: url("/assets/images/contact-background.jpg") center center no-repeat;
+	background-size: cover; */
+    background-color: #262431;
+}
+@media only screen and (max-width: 600px) {
+    .background {
+        padding: 30px 0px 30px 0px;
+    }
+}
+h2 {
+    margin-bottom: 1.125rem;
+    text-align: center;
+
+    color: #f1f1f8;
+    font: 700 2.25rem/2.75rem "Montserrat", sans-serif;
+}
+
+.p-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    color: #f1f1f8;
+    font: 400 1rem/1.5rem "Open Sans", sans-serif;
+}
+.tab{
+    padding-top: 5.375rem;
+  
+    /* padding-bottom: 6.875rem; */
+
+}
+@media only screen and (max-width: 600px) {
+    .tab {
+        padding: 30px 10px 30px 10px;
+    }
+}
+
+
+
+mat-tab-label {
+   
+    color: #f1f1f8;
+    font-weight: 700;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+   
+    color: #f1f1f8;
+    font-weight: 700;
+}
