@@ -1,8 +1,8 @@
 <div class="fluid-container background">
     <div class="container">
-        <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="50px">
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="50px" fxLayoutAlign="center center">
 
-            <div fxLayout="column" fxFlex="50%" class="text-container" fxLayoutAlign="center center">
+            <div  fxLayout="column" fxFlex="50%" class="text-container" fxLayoutAlign="center center">
                 <div class="image-logo">
                     <img class="img-logo" width="500" src="assets/images/about-extra-1.svg" alt="alternative">
                 </div>
@@ -13,23 +13,47 @@
                 <!-- <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>DOWNLOAD</a> -->
             </div>
             <div fxLayout="column" fxFlex="50%" fxLayoutAlign="center center">
-               
-
-                    <div fxLayout="column" class="main">
-                        <p class="sign" fxLayoutAlign="center start">Welcome</p>
-                        <form class="form1">
-                            <input class="un " type="text" fxLayoutAlign="center start" placeholder="Username">
+                <mat-tab-group mat-align-tabs="center">
+                  
+                    <mat-tab label="Login">
+                        <div fxLayout="column" class="main">
+                            <p class="sign" fxLayoutAlign="center start">Welcome Back</p>
+                            <form class="form1">
+                                <input class="un " type="text" fxLayoutAlign="center start" placeholder="Username">
+                                
+                                <input class="pass" type="password" fxLayoutAlign="center start" placeholder="Password">
+                               
+                                    
+                                    <a class="submit" fxLayoutAlign="center start" [routerLink]="['/home']" >Login</a>
+                             
+                                
+                                <p class="forgot" fxLayoutAlign="center start">Forgot Password?</p>
+                            </form>
+    
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Sign-up">
+                        <div fxLayout="column" class="main">
+                            <p class="sign" fxLayoutAlign="center start">Welcome</p>
+                            <form class="form1">
+                                <input class="un " type="text" fxLayoutAlign="center start" placeholder="Name">
+                                <input class="un " type="text" fxLayoutAlign="center start" placeholder="Email">
+                                <input class="un " type="text" fxLayoutAlign="center start" placeholder="Number">
+                                
+                                <input class="pass" type="password"  placeholder="Password">
                             
-                            <input class="pass" type="password" fxLayoutAlign="center start" placeholder="Password">
-                            <div fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="10%" >
-                                <a class="submit" [routerLink]="['/sign-in']" >Sign in</a>
-                                <a class="submit" [routerLink]="['/home']" >Login</a>
-                            </div>
-                            
-                            <p class="forgot" fxLayoutAlign="center start">Forgot Password?</p>
-                        </form>
+                                <a fxLayoutAlign="center start" class="submit" [routerLink]="['/home']" >Sign Up</a>
+                                    
+                               
+                                <!-- <p class="forgot" fxLayoutAlign="center start">Forgot Password?</p> -->
+                            </form>
+    
+                        </div>
+                    </mat-tab>
+                 
+                  </mat-tab-group>
 
-                    </div>
+                
 
                 </div>
 
