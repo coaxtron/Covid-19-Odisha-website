@@ -19,7 +19,9 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ContactComponent } from './components/contact/contact.component';
-
+import { LoginComponent } from './components/auth/login/login.component';
+import { SignInComponent } from './components/auth/sign-in/sign-in.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     FeatureComponent,
     ScreenshotComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,7 @@ import { ContactComponent } from './components/contact/contact.component';
     MatButtonModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    MatFormFieldModule,
     MatTabsModule,
     FormsModule,
     // AngularFireModule.initializeApp(environment.firebaseConfig),
